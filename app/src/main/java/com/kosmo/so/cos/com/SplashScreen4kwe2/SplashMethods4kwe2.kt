@@ -1,4 +1,4 @@
-package com.kosmo.so.cos.com.SplashScreen
+package com.kosmo.so.cos.com.SplashScreen4kwe2
 
 import android.content.SharedPreferences
 

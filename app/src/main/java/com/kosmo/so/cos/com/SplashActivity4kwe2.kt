@@ -11,8 +11,8 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.ProgressBar
 import androidx.lifecycle.lifecycleScope
-import com.kosmo.so.cos.com.SplashScreen.SplashMethods4kwe2
-import com.kosmo.so.cos.com.SplashScreen.SplashPresenter4kwe2
+import com.kosmo.so.cos.com.SplashScreen4kwe2.SplashMethods4kwe2
+import com.kosmo.so.cos.com.SplashScreen4kwe2.SplashPresenter4kwe2
 import com.kosmo.so.cos.com.Utils4kwe2.SharedPreferenceCommands4kwe2
 import com.kosmo.so.cos.com.Utils4kwe2.SharedPreferenceCommands4kwe2.getLastPage4kwe24kwe2
 import kotlinx.coroutines.delay
