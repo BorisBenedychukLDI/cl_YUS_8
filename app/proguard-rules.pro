@@ -19,3 +19,6 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-obfuscationdictionary random_4kwe2_vocabulary.txt
+-packageobfuscationdictionary random_4kwe2_vocabulary.txt
+-classobfuscationdictionary random_4kwe2_vocabulary.txt

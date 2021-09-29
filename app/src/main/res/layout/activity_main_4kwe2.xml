@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_purple_4kwe2"
+    tools:context=".SplashActivity4kwe2">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_4kwe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="600dp" />
+
+    <Button
+        android:id="@+id/button_4kwe2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_4kwe2"
+        android:text="@string/b_start_text_4kwe2"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_4kwe2" />
+
+    <ImageView
+        android:id="@+id/iv_rocket_4kwe2"
+        android:layout_width="199dp"
+        android:layout_height="240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/rocket_4kwe2"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:srcCompat="@drawable/rocket_bg_4kwe2" />
+
+    <ImageView
+        android:id="@+id/iv_cosmo_label_4kwe2"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/kosmo_label_4kwe2"
+        app:srcCompat="@drawable/kosmolot_label_4kwe2" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading_progress_4kwe2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:progressTint="@color/theme_pink_4kwe2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_4kwe2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

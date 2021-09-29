@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">cosmoYUS</string>
+    <string name="app_name_4kwe2">Космолот</string>
+    <string name="lets_go_4kwe2">"Let's go !"</string>
+    <string name="b_start_text_4kwe2">Start</string>
+    <string name="looking_for_connection_4kwe2">Looking for connection…</string>
+    <string name="rocket_4kwe2">a rocket</string>
+    <string name="kosmo_label_4kwe2">kosmo label</string>
 </resources>

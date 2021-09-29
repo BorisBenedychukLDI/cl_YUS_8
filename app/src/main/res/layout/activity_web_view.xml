@@ -2,8 +2,59 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cs_4kwe2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WebViewActivity4kwe2">
+    tools:context=".WebViewActivity4Kwe24kwe2">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_internet_dialog_4kwe2"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@color/theme_purple_4kwe2"
+        app:cardBackgroundColor="@color/theme_purple_4kwe2"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ProgressBar
+            android:id="@+id/pb_ic_4kwe2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:indeterminateTint="@color/theme_pink_4kwe2" />
+
+        <TextView
+            android:id="@+id/tv_ic_4kwe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/looking_for_connection_4kwe2"
+            android:textColor="@color/theme_pink_4kwe2"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl_wv_4kwe2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.kosmo.so.cos.com.CustomWebViewElements4kwe2.CustomWebView4kwe2
+            android:id="@+id/custom_wv_4kwe2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
