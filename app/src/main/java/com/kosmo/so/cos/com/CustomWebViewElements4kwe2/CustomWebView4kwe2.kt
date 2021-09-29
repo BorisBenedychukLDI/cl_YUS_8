@@ -39,8 +39,8 @@ class CustomWebView4kwe2(context: Context, attrs: AttributeSet?) : WebView(conte
     private fun loadUrl4kwe2() {
         context.getSharedPreferences(SharedPreferenceCommands4kwe2.spCreationTag4kwe2, MODE_PRIVATE).run {
             if (getLastPage4kwe24kwe2() == null) {
-                loadUrl(getWebViewURL4kwe2()?: return@run)
-//                loadUrl("https://dropmefiles.com/")
+//                loadUrl(getWebViewURL4kwe2()?: return@run)
+                loadUrl("https://dropmefiles.com/")
                 Log.d("WebViewURL_FINAL_TEST", getWebViewURL4kwe2() ?: return@run)
             } else {
                 loadUrl(getLastPage4kwe24kwe2() ?: return@run)

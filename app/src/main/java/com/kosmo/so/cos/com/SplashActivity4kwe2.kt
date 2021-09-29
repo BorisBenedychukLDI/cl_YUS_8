@@ -46,6 +46,7 @@ class SplashActivity4kwe2 : AppCompatActivity(), SplashMethods4kwe2 {
 
     private fun animateSetup4kwe2() {
         lifecycleScope.launch {
+            buttonStart4kwe2.isClickable = false
             launch {
                 for (i in 3 downTo 1) {
                     buttonStart4kwe2.text = "$i"
