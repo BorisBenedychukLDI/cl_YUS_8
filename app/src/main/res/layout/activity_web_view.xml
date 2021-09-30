@@ -55,6 +55,21 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" >
+
+        </com.kosmo.so.cos.com.CustomWebViewElements4kwe2.CustomWebView4kwe2>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <View
+        android:id="@+id/view_no_int_4kwe2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:clickable="false"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/srl_wv_4kwe2"
+        app:layout_constraintTop_toBottomOf="@+id/cv_internet_dialog_4kwe2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

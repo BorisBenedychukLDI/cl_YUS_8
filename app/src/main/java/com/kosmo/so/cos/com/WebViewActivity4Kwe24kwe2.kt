@@ -1,12 +1,14 @@
 package com.kosmo.so.cos.com
 
 import android.animation.ObjectAnimator
+import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MotionEvent
 import android.view.View
 import androidx.cardview.widget.CardView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -21,6 +23,7 @@ class WebViewActivity4Kwe24kwe2 : AppCompatActivity(), CustomWebChromeMethods4kw
     private lateinit var customWebView4kwe2: CustomWebView4kwe2
 
     private lateinit var cardView4kwe2: CardView
+    private lateinit var view4kwe2: View
     private lateinit var swipeRefreshLayout4kwe2: SwipeRefreshLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,6 +32,7 @@ class WebViewActivity4Kwe24kwe2 : AppCompatActivity(), CustomWebChromeMethods4kw
         customWebView4kwe2 = findViewById(R.id.custom_wv_4kwe2)
         cardView4kwe2 = findViewById(R.id.cv_internet_dialog_4kwe2)
         swipeRefreshLayout4kwe2 = findViewById(R.id.srl_wv_4kwe2)
+        view4kwe2 = findViewById(R.id.view_no_int_4kwe2)
         swipeRefreshLayout4kwe2.setOnRefreshListener {
             customWebView4kwe2.loadUrl(customWebView4kwe2.url ?: return@setOnRefreshListener)
             swipeRefreshLayout4kwe2.isRefreshing = false
@@ -87,15 +91,25 @@ class WebViewActivity4Kwe24kwe2 : AppCompatActivity(), CustomWebChromeMethods4kw
         addAction(InternetCheckService4kwe2.INTERNET_CHECK_4KWE2)
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     private fun showInternetProblems4kwe2() {
         if (UtilPackage4kwe2.networkPresence4kwe2) {
+            swipeRefreshLayout4kwe2.isEnabled = false
+            customWebView4kwe2.setOnTouchListener { _, _ -> true }
+            view4kwe2.animate().alpha(1f)
+            view4kwe2.visibility = View.VISIBLE
             ObjectAnimator.ofFloat(cardView4kwe2, View.TRANSLATION_Y, 0f, 150f).start()
             UtilPackage4kwe2.networkPresence4kwe2 = false
         }
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     private fun hideInternetProblems4kwe2() {
         if (!UtilPackage4kwe2.networkPresence4kwe2) {
+            view4kwe2.animate().alpha(0f)
+            swipeRefreshLayout4kwe2.isEnabled = true
+            customWebView4kwe2.setOnTouchListener { _, _ -> false }
+            view4kwe2.visibility = View.INVISIBLE
             ObjectAnimator.ofFloat(cardView4kwe2, View.TRANSLATION_Y, 150f, 0f).start()
             UtilPackage4kwe2.networkPresence4kwe2 = true
         }
