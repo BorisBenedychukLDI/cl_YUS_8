@@ -95,7 +95,7 @@ class WebViewActivity4Kwe24kwe2 : AppCompatActivity(), CustomWebChromeMethods4kw
     private fun showInternetProblems4kwe2() {
         if (UtilPackage4kwe2.networkPresence4kwe2) {
             swipeRefreshLayout4kwe2.isEnabled = false
-            customWebView4kwe2.setOnTouchListener { _, _ -> true }
+            customWebView4kwe2.setOnTouchListener { _4kwe2, _4kwe22 -> true }
             view4kwe2.animate().alpha(1f)
             view4kwe2.visibility = View.VISIBLE
             ObjectAnimator.ofFloat(cardView4kwe2, View.TRANSLATION_Y, 0f, 150f).start()
@@ -108,8 +108,7 @@ class WebViewActivity4Kwe24kwe2 : AppCompatActivity(), CustomWebChromeMethods4kw
         if (!UtilPackage4kwe2.networkPresence4kwe2) {
             view4kwe2.animate().alpha(0f)
             swipeRefreshLayout4kwe2.isEnabled = true
-            customWebView4kwe2.setOnTouchListener { _, _ -> false }
-            view4kwe2.visibility = View.INVISIBLE
+            customWebView4kwe2.setOnTouchListener { _4kwe2, _4kwe22 -> false }
             ObjectAnimator.ofFloat(cardView4kwe2, View.TRANSLATION_Y, 150f, 0f).start()
             UtilPackage4kwe2.networkPresence4kwe2 = true
         }
